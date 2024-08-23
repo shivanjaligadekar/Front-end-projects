@@ -1,0 +1,11 @@
+<input type="number" id="x1"><br>
+<button onclick="convert()">convert</button>
+<p id="p1"></p>
+<script>
+     function convert() {
+      var celsius = document.getElementById('x1').value;
+      console.log(celsius);
+      var fahrenheit = (celsius * 9/5) + 32;
+      document.querySelector("#p1").innerHTML=fahrenheit
+     }
+</script>

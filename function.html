@@ -1,0 +1,22 @@
+<script>
+    function emi(p,n,r){
+        console.log("function call");
+        console.log(p,n,r);
+        var openingBalance=0;
+        n=n*12;
+        r=r/12/100;
+        var emi=p*r*(1+r)**n/((1+r)**n-1);
+        // P x R x (1+R)^N / [(1+R)^N-1] 
+        for(var i=1;i<=6;i++){
+            var interest=(openingBalance+p)*r/100;
+            interest=Math.round(r);
+            var closingBalance=openingBalance+p+r;
+            console.log(i,openingBalance,p,r,closingBalance);
+            document.write(`
+            <li>${i} ${openingBalance} ${p} ${r} ${closingBalance}</li>
+            `)
+            openingBalance=closingBalance;
+        }
+    }
+    emi(2500000,30,6.75);
+</script>

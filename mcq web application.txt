@@ -1,0 +1,303 @@
+1. What is web technology?
+a) A collection of tools and techniques used to create and deliver content on the World Wide Web
+b) A type of software that enables users to access and interact with information on the internet
+c) A network of interconnected computers that share information and services
+d) A system for storing and retrieving information on the internet
+View Answer
+
+2. Which HTML tag is used to create a hyperlink?
+a) <link>
+b) <href>
+c) <a>
+d) <hyperlink>
+View Answer
+
+Answer: c
+Explanation: The HTML tag <a> is used to create a hyperlink, which is a link to another web page or resource. The <a> tag has two main attributes: href and target. The href attribute specifies the URL of the linked resource, while the target attribute specifies whether the link should open in a new browser window or tab.
+3. Which of the following is not a web component element?
+a) <shadow>
+b) <menu>
+c) <content>
+d) <element>
+View Answer
+
+
+Answer: b
+Explanation: There are web components in HTML related technology which makes it possible to essentially create and use custom elements as if it were regular HTML. You can also create custom versions of standard HTML elements. Some of the elements are <shadow>, <content>, <element>, <template>, <slot>.
+advertisement
+
+4. Which of the following programming languages is commonly used for server-side scripting in web development?
+a) HTML
+b) CSS
+c) JavaScript
+d) PHP
+View Answer
+
+
+Answer: d
+Explanation: HTML, CSS, and JavaScript play crucial roles in front-end development, focusing on the visual aspects of web pages, while PHP serves as the primary language for server-side scripting. It manages backend tasks such as database interactions, processing user input, and generating dynamic content.
+5. Which of the following is used to read a HTML page and render it?
+a) Web server
+b) Web matrix
+c) Web browser
+d) None of the mentioned
+View Answer
+
+Answer: c
+Explanation: A web browser (commonly referred to as a browser) is a software application for retrieving, presenting and traversing information resources on the World Wide Web.
+6. Which of the following is a popular front-end framework for building user interfaces in JavaScript?
+a) Django
+b) Angular
+c) Flask
+d) Node.js
+View Answer
+
+Answer: b
+Explanation: Angular is a widely used front-end framework specifically designed for creating dynamic and interactive user interfaces in JavaScript.
+7. What application can one create even before the introduction of HTML5?
+a) Forms
+b) Browser based games
+c) Web applications
+d) Mobile applications
+View Answer
+
+
+Answer: a
+Explanation: With the help of HTML5 and JavaScript it became possible to create excellent mobile applications, browser based games, web applications and many more other applications. Forms were already introduced before HTML5.
+8. Which of the following is not associated with web socket communication?
+a) https
+b) wss
+c) http
+d) ws
+View Answer
+
+Answer: c
+Explanation: For opening WebSocket we call WebSocket constructor. The syntax is
+var conn=new WebSocket(‘ws://rtyyghj.websocket.org/echo’,[‘brush’, ‘xmpp’]);
+for using secure HTTP connections use https: ,ws: is the new URL scheme for connecting WebSockets. There is wss: also.
+
+9. Why are Images often used on the webpage?
+a) To create graphical buttons or links to other pages
+b) To help the webpage load efficiently
+c) Webpage cannot run/be displayed without at least one image
+d) Because webpage doesn’t support pure text
+View Answer
+
+Answer: a
+Explanation: Images are also used for better presentation of webpage. Any image can be turned into a link. Rather than putting text between the opening < a > tag and the closing < /a > tag, you simply place an image inside these tags.
+10. What is DOM?
+a) Application programming interface
+b) Hierarchy of objects in ASP.NET
+c) Convention for representing and interacting with objects in html documents
+d) None of the mentioned
+View Answer
+
+
+Answer: c
+Explanation: The Document Object Model (DOM) is a cross-platform and language-independent convention for representing and interacting with objects in HTML, XHTML, and XML documents.
+11. What are tables in web programming?
+a) Display information which are already accessed by the user
+b) Containing more number of rows than columns
+c) To only store data to be accessed later by the user
+d) Display information in rows and columns used to display all manner of data that fits in a grid
+View Answer
+
+Answer: d
+Explanation: Tables display information in rows and columns; they are commonly used to display all manner of data that fits in a grid such as train schedules, television listings, financial reports, and sports results.
+12. What does <td> stand for?
+a) Table database
+b) Table data
+c) Table directory
+d) Table direct row
+View Answer
+
+Answer: b
+Explanation: While a row is contained inside a < tr > element, each cell is then written inside the row element using a < td > element which stands for table data. If you are looking at a web page and want to know whether that page is using a table to control how the data is laid out, you can always look at the source for that page.
+13. Which element to used to give title to a table?
+a) Caption
+b) Headline
+c) Title
+d) Heading
+View Answer
+
+
+Answer: a
+Explanation: By using a <caption> element, rather than just describing the purpose of the table in a previous or subsequent paragraph, you are directly associating the content of the table with this description- and this association can be used by screen readers and by applications that process web pages (such as search engines).
+14. What are Forms in web programming?
+a) They are matrices on web page
+b) They are used to create Table data and its information
+c) They allow you to enter data which can be processed to servers
+d) They are the information filled by the server-side
+View Answer
+
+Answer: c
+Explanation: Forms can look a lot like papers or database forms. A form is filled using text boxes, chechboxes, radiobuttons. For example, applying/order a product from online or it’s a google search result.
+15. What are Frames?
+a) They divide a webpage
+b) They are the type of borders used for a webpage
+c) They are the type of borders used by web browsers
+d) They divide the browser into two or more pieces or panes
+View Answer
+
+Answer: d
+Explanation: Browser gets divided into panes by Frame, with each pane containing a separate web page. The advantages are that they offer you where you can load and reload single panes without having to reload the entire contents of the browser window.
+16. Which HTML tag is used to create an ordered list in a webpage?
+a) <ol>
+b) <ul>
+c) <li>
+d) <ol> and <ul>
+View Answer
+
+
+Answer: a
+Explanation: The <ol> tag is used to create an ordered list in a webpage. Ordered lists are lists where the items have a specific order or sequence. The items in an ordered list are typically numbered or lettered.
+17. Which font format is used in web pages?
+a) EOT
+b) WOFF 2.0
+c) WOFF
+d) SVG Fonts
+View Answer
+
+Answer: c
+Explanation: WOFF is font format used in web pages. It was developed in 2009. It is essentially OpenType or TrueType with compression and additional metadata. The goal is to support font distribution from the server to client over the network with bandwidth constraints.
+18. Which HTML tag is used to create a form?
+a) <form>
+b) <input>
+c) <select>
+d) <textarea>
+View Answer
+
+Answer: a
+Explanation: The HTML tag used to create a form is <form>. It’s used to define an area where users can input and submit data on a webpage. Inside the <form> tag, various input elements like <input>, <select>, and <textarea> are used to collect information from users. When users fill in the form and submit it, the data is sent to a server for processing or storage.
+19. Which of the following property is used to control the space between the border and content in a table?
+a) border
+b) padding
+c) margin
+d) resize
+View Answer
+
+
+Answer: b
+Explanation: The padding property is used to control the space between the border and content in a table.
+Example: table{border: 4px solid black;}
+20. Which of the following CSS Property controls how an element is positioned?
+a) fix
+b) set
+c) static
+d) position
+View Answer
+
+21. Which CSS property can be used to set the image as border instead of the border style?
+a) border-image-source
+b) background-image-source
+c) border-image
+d) background-image
+View Answer
+
+22. Which of the following property defines labels for a list of items?
+a) list-style-type
+b) list-style-image
+c) list-stylelist-style-type
+d) none of the mentioned
+View Answer
+
+
+23. Which of the following communicates with server-side CGI scripts through HTML form submissions and can be written without the use of JavaScript?
+a) Interactive Web Pages
+b) Static Web Pages
+c) Conditional Web Pages
+d) All web pages
+View Answer
+
+24. What is the special feature of modern web applications?
+a) Must load the document to manipulate
+b) Can alter contents without loading document
+c) Can’t be altered at all
+d) Remains static
+View Answer
+
+
+25. Which of the following is the Web application equivalent to querySelectorAll()?
+a) #()
+b) &()
+c) !()
+d) $()
+View Answer
+
+26. Which is the storage that allows the caching of web pages and their associated resources?
+a) Offline Web Applications
+b) Cookies
+c) Web Databases
+d) FileSystem API
+View Answer
+
+27. When does JavaScript code appear inline within an HTML file?
+a) Between or Outside the “script” tag
+b) Between the header tag
+c) Outside the “script” tag
+d) Between the “script” tag
+View Answer
+
+
+28. What is the purpose of the event handlers in the JavaScript?
+a) Adds innerHTML page to the code
+b) Allows JavaScript code to alter the behaviour of windows
+c) Performs handling of exceptions and occurrences
+d) Change the server location
+View Answer
+
+29. What is Vue JS?
+a) Scripting Language
+b) A framework
+c) Programming Language
+d) Directives
+View Answer
+
+30. Which of the following bootstrap styles can be used to create a default progress bar?
+a) .progress, .progress-bar
+b) .link-progress-bar
+c) .nav-progress
+d) All of the mentioned
+View Answer
+
+
+31. What is the purpose of JavaScript in web development?
+a) To define the structure and content of web pages
+b) To add interactivity and behavior to web pages
+c) To style and format web pages
+d) To manage server-side data and databases
+View Answer
+
+32. React.js is written in which of the following language?
+a) C++
+b) C
+c) Java
+d) JavaScript
+View Answer
+
+33. Which of the following directives is used to start an angularJS application?
+a) ng-app
+b) ng-init
+c) ng-repeat
+d) ng-model
+View Answer
+
+34. How many classes does bootstrap grid system has?
+a) 2
+b) 3
+c) 4
+d) 1
+View Answer
+
+35. What is the JavaScript keyword used to define a function?
+a) var
+b) function
+c) let
+d) const
+View Answer
+
+36. Which CSS property is used to specify the width of an element?
+a) padding
+b) margin
+c) height
+d) width

@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    border: solid;
+    width: 1200px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1 {
+    width: 8.333%;
+    border: solid blue;
+}
+.col-3 {
+    width:25%;
+    border: solid;
+}
+.col-4 {
+    width: 33.333%;
+    border: solid;
+}
+.col-9 {
+    width: 75%;
+    border: solid;
+}

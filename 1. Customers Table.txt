@@ -1,0 +1,136 @@
+1. Customers Table
+
+CREATE TABLE Customers (
+    CustomerID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Address VARCHAR(255),
+    PhoneNumber VARCHAR(15),
+    Email VARCHAR(255),
+    VehicleInfo VARCHAR(255)
+);
+
+
+====================================================-
+
+2. Employees Table
+
+
+CREATE TABLE Employees (
+    EmployeeID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Position VARCHAR(100),
+    PhoneNumber VARCHAR(15),
+    Email VARCHAR(255),
+    HireDate DATE,
+    Salary DECIMAL(10, 2)
+);
+=====================================================
+
+3. Services Table
+
+CREATE TABLE Services (
+    ServiceID INT AUTO_INCREMENT PRIMARY KEY,
+    ServiceName VARCHAR(255) NOT NULL,
+    Description TEXT,
+    Duration INT, -- Duration in minutes
+    Price DECIMAL(10, 2)
+);
+========================================
+4. Appointments Table
+
+CREATE TABLE Appointments (
+    AppointmentID INT AUTO_INCREMENT PRIMARY KEY,
+    CustomerID INT,
+    EmployeeID INT,
+    ServiceID INT,
+    AppointmentDate DATE,
+    AppointmentTime TIME,
+    Status VARCHAR(50),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+    FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID),
+    FOREIGN KEY (ServiceID) REFERENCES Services(ServiceID)
+);
+========================================
+5. Invoices Table
+
+CREATE TABLE Invoices (
+    InvoiceID INT AUTO_INCREMENT PRIMARY KEY,
+    CustomerID INT,
+    AppointmentID INT,
+    DateIssued DATE,
+    TotalAmount DECIMAL(10, 2),
+    PaymentStatus VARCHAR(50),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+    FOREIGN KEY (AppointmentID) REFERENCES Appointments(AppointmentID)
+);
+========================================
+6. Inventory Table
+
+CREATE TABLE Inventory (
+    ItemID INT AUTO_INCREMENT PRIMARY KEY,
+    ItemName VARCHAR(255) NOT NULL,
+    Description TEXT,
+    QuantityInStock INT,
+    ReorderLevel INT,
+    SupplierID INT,
+    FOREIGN KEY (SupplierID) REFERENCES Suppliers(SupplierID)
+);
+========================================
+7. Suppliers Table
+
+CREATE TABLE Suppliers (
+    SupplierID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    ContactPerson VARCHAR(255),
+    PhoneNumber VARCHAR(15),
+    Email VARCHAR(255),
+    Address VARCHAR(255)
+);
+========================================
+8. Vehicle Information Table
+
+CREATE TABLE VehicleInformation (
+    VehicleID INT AUTO_INCREMENT PRIMARY KEY,
+    CustomerID INT,
+    Make VARCHAR(255),
+    Model VARCHAR(255),
+    Year INT,
+    LicensePlate VARCHAR(50),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+========================================
+9. Feedback Table
+
+CREATE TABLE Feedback (
+    FeedbackID INT AUTO_INCREMENT PRIMARY KEY,
+    CustomerID INT,
+    AppointmentID INT,
+    Rating INT,
+    Comments TEXT,
+    Date DATE,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+    FOREIGN KEY (AppointmentID) REFERENCES Appointments(AppointmentID)
+);
+========================================
+10. Payments Table
+CREATE TABLE Payments (
+    PaymentID INT AUTO_INCREMENT PRIMARY KEY,
+    InvoiceID INT,
+    PaymentDate DATE,
+    PaymentMethod VARCHAR(50),
+    Amount DECIMAL(10, 2),
+    FOREIGN KEY (InvoiceID) REFERENCES Invoices(InvoiceID)
+);
+========================================
+11. Service History Table
+CREATE TABLE ServiceHistory (
+    ServiceHistoryID INT AUTO_INCREMENT PRIMARY KEY,
+    CustomerID INT,
+    VehicleID INT,
+    ServiceID INT,
+    DateOfService DATE,
+    Notes TEXT,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+    FOREIGN KEY (VehicleID) REFERENCES VehicleInformation(VehicleID),
+    FOREIGN KEY (ServiceID) REFERENCES Services(ServiceID)
+);

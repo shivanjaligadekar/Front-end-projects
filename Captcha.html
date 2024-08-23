@@ -1,0 +1,22 @@
+<p class="x1"></p>
+<input type="text" class="x2">
+<button onclick="f1()">Enter</button>
+<p class="x3"></p>
+<script>
+    var number1=Math.round(Math.random()*10);
+    console.log(number1);
+    var number2=Math.round(Math.random()*10);
+    console.log(number2);
+    var sum=number1+number2;
+    document.querySelector(".x1").innerHTML=`
+    Enter ${number1}+${number2}`
+
+    function f1() {
+        var record=document.querySelector(".x2").value;
+        console.log(record);
+        //(condition)?(true):(false)
+        var message=(record==sum)?"valid":"invalid";
+        console.log(message);
+        document.querySelector(".x3").innerHTML=message;
+    }
+</script>

@@ -1,0 +1,33 @@
+<input type="text" placeholder="enter principle" class="x1">
+<input type="text" placeholder="enter rate" class="x2">
+<input type="text" placeholder="enter duration" class="x3">
+<button onclick="f1()">Enter</button>
+<p class="p1"></p>
+<p class="p2"></p>
+<p class="p3"></p>
+
+
+<script>
+    function f1() {
+        var p = document.querySelector(".x1").value;
+        var r = document.querySelector(".x2").value;
+        var t = document.querySelector(".x3").value;
+
+        p = Number(p);
+        r = Number(r);
+        t = Number(t);
+        console.log(p, r, t);
+         
+        var simpleintrest = ((p * r * t) / 100);
+        var finalA = (p + simpleintrest);
+        
+        
+
+
+        document.querySelector(".p1").innerText = `invested Amount ${p}`;
+        document.querySelector(".p2").innerText = `Intrest ${simpleintrest}`;
+        document.querySelector(".p3").innerText = `final Amount ${finalA}`;
+
+
+    }
+</script>

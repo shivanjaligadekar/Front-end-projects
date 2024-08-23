@@ -1,0 +1,18 @@
+<script>
+    var product={
+        "name":"Ring",
+        "price":50000,
+        "path":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtzRDGwWBgliWYQPwdET4dBKr3sjLAzoFAreh73x7n7w&s",
+        "size":["s","l","xl","xxl"]
+    };
+    console.log(product);
+    document.write(`
+    <div>
+    <img src="${product.path}" alt="">
+    <h2>${product.price}</h2>
+    <p>${product.name}</p>
+    <p>${product.size}</p>
+    <button>Add to cart</button>
+</div>
+    `)
+</script>

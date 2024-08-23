@@ -1,0 +1,11 @@
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 10px;
+}
+tr:hover{
+   background-color:#ccc;
+   cursor: pointer;
+}

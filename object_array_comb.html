@@ -1,0 +1,48 @@
+<script>
+    var product=[
+        {
+        "name":"Gold Ring",
+        "price":50000,
+        "path":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR89UO-6L2wwqIljkT7V4REmu-CHraNYmMsJrkH0b7eVA&s",
+        "size":["s","l","xl","xxl"]
+        },
+        {
+        "name":"Silver Ring",
+        "price":70000,
+        "path":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnsye1_w8Q25eM79wFANftWGwhgu-163BRJhYi2UCJJg&s",
+        "size":["s","l","xl","xxl"]
+
+        },
+        {
+        "name":"Diamond Ring",
+        "price":90000,
+        "path":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDuE_jp8fAauI8E1hDP90UqRwxoiRQ2NN-YHXoP6xXEA&s",
+        "size":["s","l","xl","xxl"]
+        }
+    ]
+    console.log(product)
+    var i=0;
+    while(i<product.length){
+        console.log(i,product[i]);
+        document.write(`
+        <div>
+        <img src="${product[i].path}" alt="">
+        <h2>${product[i].price}</h2>
+        <p>${product[i].name}</p>
+        <p>${product[i].size}</p>
+        <button>Add to cart</button>
+        </div>
+        `)
+        i++;
+    }
+</script>
+<style>
+    div{
+        border: solid;
+        width: 250px;
+        float: left;
+    }
+    img{
+        width: 100%;
+    }
+</style>

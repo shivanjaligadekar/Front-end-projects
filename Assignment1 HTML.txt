@@ -1,0 +1,258 @@
+1) create a para , apply border solid , change the dimension to 100X100
+
+<div class="container">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+     
+</div>
+<style>
+    .container{
+        border: solid;
+        width: 100px;
+        height:100px;
+        
+    }
+</style>
+
+2) create a para , apply border dashed , on mouse over show background color: grey.
+<div class="container">
+</div>
+ <style>
+    .container{
+        border: solid;
+        width: 100px;
+        height:100px;
+        
+    }
+    th :hover{
+       background-color: grey;
+       cursor: pointer;
+    }
+</style>
+
+3) create a para & bold tag , apply background color to both .
+( note down the diff. between para & bold . which one block element  & inline element?? )
+
+<head>
+    <title>Paragraph and Bold with Background Color</title>
+    <style>
+        p {
+            background-color: lightblue; 
+            display: block; 
+            padding: 10px;
+        }
+
+        b {
+            background-color: lightgreen; 
+            display: inline; 
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a <b>paragraph</b> with some <b>bold</b> text.</p>
+</body>
+
+4) create a h1 tag apply font size 40px , with background any color & change its font to arial
+
+<h1 class="custom-h1">Heading 1 with custom styles</h1>
+.custom-h1 {
+    font-size: 40px; 
+    background-color: lightyellow; 
+    font-family: Arial, sans-serif; 
+    padding: 10px; 
+}
+
+5) create underline tag and remove its underline using css property
+<head>
+    <title>Remove Underline from Underline Tag</title>
+    <style>
+        u {
+            text-decoration: none; 
+        }
+    </style>
+</head>
+
+6) create a para with dummy text & align its content with 4 diff. values (
+	left,center,justify,right : see the result one by one on browser)
+<head>
+    <style>
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .align-justify {
+            text-align: justify;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="align-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <p class="align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <p class="align-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</body>
+
+7) create a para with dummy text & apply indent property with 100px value & see the result on browser.
+<head>
+    <style>
+        .indented {
+            text-indent: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p class="indented">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</body>
+
+8) create a para with dummy text & apply decoration property with ( underline,overline,line-through & none) . see the result 
+<head>
+    <style>
+        .underline {
+            text-decoration: underline;
+        }
+
+        .overline {
+            text-decoration: overline;
+        }
+
+        .line-through {
+            text-decoration: line-through;
+        }
+
+        .none {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <p class="underline">Underline Text</p>
+    <p class="overline">Overline Text</p>
+    <p class="line-through">Line Through Text</p>
+    <p class="none">None Text Decoration</p>
+</body>
+
+9) create an anchor tag , change its color to red & remove its underline.
+apply title tag , href with google page link
+
+<head>
+    <title>Styled Anchor Tag</title>
+    <style>
+        a {
+            color: red; 
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com" title="Google">Visit Google</a>
+</body>
+
+10) show any image on browser with dimension 200X200 . apply border radius with 10px. on mouse over show image in circle format (i.e 50% border radius)
+<head>
+    <style>
+        /* Initially, display image with 10px border radius */
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        /* On mouseover, display image with 50% border radius, creating a circle */
+        img:hover {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+</body>
+
+11) create a para with dummy text , apply line-height double , word space with 20px & letter space with 5px.
+<head>
+    <style>
+        p {
+            line-height: 2; 
+            word-spacing: 20px; 
+            letter-spacing: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</body>
+
+12) create a para with dummy text , use google font and apply any google font on para as per your choice
+
+<head>
+    <style>
+        /* Importing the Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        /* Applying the Google Font to the paragraph */
+        p {
+            font-family: 'Roboto', sans-serif; /* Applying Roboto font */
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</body>
+
+13) create a para & div  with dummy text, identify the diff. between para & div ( & when to use para ,div ? ) , with justification.
+
+<head>
+    <style>
+        /* Styling for paragraph */
+        p {
+            background-color: lightblue; /* Adding background color for visibility */
+            padding: 10px; /* Adding padding for spacing */
+        }
+
+        /* Styling for div */
+        .container {
+            background-color: lightgreen; /* Adding background color for visibility */
+            padding: 20px; /* Adding padding for spacing */
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraph with dummy text.</p>
+
+    <div class="container">
+        <p>This is a paragraph inside a div container.</p>
+    </div>
+</body>
+
+14) show city name data in unordered format
+<h1>City</h1>
+<ul>
+    <li>Pune</li>
+    <li>Mumbai</li>
+    <li>Banglore</li>
+</ul>
+
+15) show city name data in order format
+<h1>City</h1>
+<ol start ="100">
+    <li>Pune</li>
+    <li>Mumbai</li>
+    <li>Banglore</li>
+</ol>
